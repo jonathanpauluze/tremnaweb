@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html manifest="./manifest.appcache">
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/online.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
 	<title>TremNaWeb Pub</title>
 </head>
 <body>
@@ -9,6 +13,10 @@
 	<header class="main-header">
 		<i class="ancora" id="header"></i>
 		<nav class="navbar">
+			<label class="nav-label" for="nav-check">
+				<i class="fa fa-bars"></i>
+			</label>
+			<input class="nav-check" id="nav-check" type="checkbox" />
 			<ul class="nav-list">
 				<li class="nav-list-item">
 					<a class="nav-link" href="#header">Home</a>
@@ -24,6 +32,7 @@
 				</li>
 			</ul>
 		</nav>
+		<img class="header-video" src="./images/copo_cerveja.jpg">
 		<video autoplay muted loop src="videos/copo_cerveja.mp4" type="video/mp4" class="header-video"></video>
 		<img class="logo" src="images/logo.png">
 	</header>
@@ -42,6 +51,9 @@
 		<div class="section-container">
 			<h1 class="section-title">Nossos Drinks</h1>
 			<img class="drink-image" src="images/cocktails.jpg">
+			<img class="drink-image" src="images/drinks.jpg">
+			<img class="drink-image" src="images/beers.jpg">
+
 			<p class="section-text">Possuímos os mais diversos tipos de bebidas. Com certeza você encontrará um com a sua personalidade, o que torna a TremNaWeb um ótimo lugar para se reunir nas mais diversas ocasiões. Venha conferir!</p>
 		</div>
 	</section>
