@@ -1,0 +1,175 @@
+/*       VARIAVEIS
+**********************/
+:root {
+	--transparente: rgba(0,0,0,0.70);
+}
+
+
+/*       GERAL
+**********************/
+html, body {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color:  #161616;
+	color: #fff;
+}
+
+.section-background {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 500px;
+}
+
+.section-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--transparente);
+}
+
+.section-title {
+	text-align: center;
+	font-size: 30px;
+}
+
+.section-text {
+	background-color: var(--transparente);
+	font-size: 18px;
+	padding: 10px;
+	margin: 0;
+}
+
+.ancora {
+	position: absolute;
+	top: -85px;
+}
+
+
+/*       HEADER
+**********************/
+.main-header {
+	position: relative;
+}
+
+.header-video {
+	width: 100%;
+	filter: brightness(110%) blur(2px);
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #3b3b3b;
+	z-index: 10;
+}
+
+.nav-check {
+	display: none;
+}
+
+@media screen and (min-width: 690px) {
+	.nav-label {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.navbar {
+		height: 50px;
+	}
+
+	.nav-label {
+		font-size: 40px;
+		margin: 80px 0 0 15px;
+	}
+
+	.nav-list {
+		margin-top: -10px;
+		overflow: hidden;
+		height:  0;
+		transition:  0.4s ease;
+	}
+
+	.nav-check:checked + .nav-list {
+		height: 220px;
+	}
+
+	.nav-list .nav-list-item {
+		display: block;
+	}
+}
+
+.nav-list	{
+	padding: 0;
+	background: #3b3b3b;
+}
+
+.nav-list-item {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.nav-link {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	color: #0079d0;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 90%;
+}
+
+
+/*       O LUGAR
+**********************/
+.lugar {
+	background-image: url("../images/bar_interior.jpg");
+}
+
+
+/*       NOSSOS DRINKS
+**********************/
+.drinks {
+	background-image: url("../images/drinks_background.jpg");
+}
+
+.drink-image {
+	max-width: 33%;
+	margin-top: -20px;
+	transition: 0.3s ease;
+}
+
+.drink-image:hover {
+	filter: grayscale(100%);
+}
+
+
+/*       FOOTER
+**********************/
+.main-footer {
+	position: relative;
+	padding: 10px;
+}
+
+.footer-section {
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	min-width: 230px;
+}
